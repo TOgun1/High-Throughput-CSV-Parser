@@ -34,8 +34,6 @@ public class Ingestion2 {
             while ((line = br.readLine()) != null) {
                 
                 String[] data = line.split(",");
-
-                
                 
                 batch.add(new Object[]{
                         Long.parseLong(data[0]),                               
