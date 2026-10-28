@@ -32,6 +32,7 @@ docker exec -it ingestion_db psql -U postgres -d ecommercedb -c "TRUNCATE TABLE 
 
 ### 4. Trigger Ingestion
 Replace the path with the real path to your CSV file.
+
 Fast: curl -X POST "http://localhost:8080/api/v1/upload/fast?filePath=C:/YOUR_PATH/data/e_commerce_shopper_behaviour_and_lifestyle.csv"
 
 Slow: curl -X POST "http://localhost:8080/api/v1/upload/slow?filePath=C:/YOUR_PATH/data/e_commerce_shopper_behaviour_and_lifestyle.csv"
