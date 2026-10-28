@@ -2,12 +2,12 @@
 
 A Spring Book application designed to parse and ingest massive datasets (1,000,000 rows).
 
-##Performance Metrics
+## Performance Metrics
 * **Baseline (Spring Data JPA `save()`):** Estimated 4 hours (Tested: 100,000 rows in 24 mins / ~70 rows per second).
 * **Optimized (JdbcTemplate Batching):** 16 seconds (~62,500 rows per second).
 * **Batch Size:** 10,000 rows per network trip.
 
-##Tech Stack
+## Tech Stack
 * **Language:** Java (Spring Boot)
 * **Database:** PostgreSQL
 * **Infrastructure:** Docker Desktop
