@@ -21,11 +21,12 @@ A Spring Book application designed to parse and ingest massive datasets (1,000,0
 ##How to Run
 ### 1. Start the Database
 Ensure Docker is running, then spin up the PostgreSQL container:
-'''bash
+
 docker run --name ingestion_db -e POSTGRES_PASSWORD=postgres -e POSTGRES_DB=ecommercedb -p 5432:5432 -d postgres
+
 ### 2. Clear the Database before each run
 docker exec -it ingestion_db psql -U postgres -d ecommercedb -c "TRUNCATE TABLE shoppers;"
-'''
+
 ### 3. Run the Spring Boot Server
 ./mvnw spring-boot:run
 
