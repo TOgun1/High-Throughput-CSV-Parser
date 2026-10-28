@@ -18,7 +18,7 @@ A Spring Book application designed to parse and ingest massive datasets (1,000,0
 * **Chunking:** Groups parsed data into arrays of 10,000 records before sending a single bulk `INSERT` statement over the network.
 * **Transactional Safety:** Wraps the ingestion process in Spring's `@Transactional` annotation to ensure database integrity (all-or-nothing commit).
 
-##How to Run
+## How to Run
 ### 1. Start the Database
 Ensure Docker is running, then spin up the PostgreSQL container:
 
